@@ -1,4 +1,4 @@
-repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest and game.Players.LocalPlayer
+repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") and game.Players.LocalPlayer
 rejoining = true
 	if syn.queue_on_teleport then
 		syn.queue_on_teleport('game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()')
