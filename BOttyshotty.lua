@@ -8,7 +8,7 @@ rejoining = true
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
     end
 
-    local Decision = "any" 
+    local Decision = "largest" 
     local Player = game.Players.LocalPlayer
 	local GUIDs = {}
     local maxPlayers = 0
