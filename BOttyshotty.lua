@@ -3,7 +3,7 @@ rejoining = true
 		syn.queue_on_teleport('game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()')
 	end
 	if syn.queue_on_teleport then
-        syn.queue_on_teleport('loadstring(game:HttpGet("https://pastebin.com/raw/Lp1S4fJW"))()')
+        syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
     end
 
     local Decision = "any" 
