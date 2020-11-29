@@ -3,7 +3,7 @@ rejoining = true
 		syn.queue_on_teleport('game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()')
 	end
 	if syn.queue_on_teleport then
-        syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
+        syn.queue_on_teleport('loadstring(game:HttpGet("https://pastebin.com/raw/Lp1S4fJW"))()')
     end
 
     local Decision = "any" 
@@ -34,14 +34,14 @@ local ChatON = false
         end
         end)
     
-    
+        coroutine.resume(Coro)
+
    for _,v in pairs(game.Players:GetPlayers()) do 
         Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
         wait(1.4)
    end
     ChatON = true
     
-    coroutine.resume(Coro)
 
 	if Decision == "any" then
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
