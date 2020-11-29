@@ -55,9 +55,10 @@ local ChatON = false
         end)
 
         coroutine.resume(Coro)
+        coroutine.resume(Coro2)
 
    for _,v in pairs(game.Players:GetPlayers()) do 
-        if not v == nil and Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:WaitForChild("HumanoidRootPart").CFrame then 
+        if Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:WaitForChild("HumanoidRootPart").CFrame then 
         Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
         end
         wait(1.4)
