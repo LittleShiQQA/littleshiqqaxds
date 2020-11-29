@@ -31,6 +31,7 @@ local ChatON = false
     local Coro = coroutine.create(function()
         while ChatON == false do 
          SendChatEvent.SayMessageRequest:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
+         wait(0.2)
         SendChatEvent.SayMessageRequest:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
 	wait(5)
         end
@@ -39,7 +40,7 @@ local ChatON = false
         coroutine.resume(Coro)
 
    for _,v in pairs(game.Players:GetPlayers()) do 
-        if Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:FindFirstChild("HumanoidRootPart").CFrame then 
+        if Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:WaitForChild("HumanoidRootPart").CFrame then 
         Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
         end
         wait(1.4)
