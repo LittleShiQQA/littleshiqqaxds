@@ -11,7 +11,7 @@ rejoining = true
     local Player = game.Players.LocalPlayer
 	local GUIDs = {}
     local maxPlayers = 0
-    local SendChatEvent = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest
+    local SendChatEvent = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
 
     local Http = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100&cursor="))
     
@@ -29,8 +29,8 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
-        SendChatEvent:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
+         SendChatEvent.SayMessageRequest:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
+        SendChatEvent.SayMessageRequest:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
 	wait(5)
         end
         end)
@@ -38,8 +38,8 @@ local ChatON = false
         coroutine.resume(Coro)
 
    for _,v in pairs(game.Players:GetPlayers()) do 
-        Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character:WaitForChild("HumanoidRootPart").CFrame
-        wait(2.3)
+        Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
+        wait(1.4)
    end
     ChatON = true
     
