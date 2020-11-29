@@ -7,7 +7,10 @@ rejoining = true
 	    wait(6)
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
     end
-
+	if syn.queue_on_teleport then
+	    wait(4)
+        syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/antilag.lua"))()')
+    end
     local Decision = "largest" 
     local Player = game.Players.LocalPlayer
 	local GUIDs = {}
@@ -61,7 +64,7 @@ local ChatON = false
         if v and v.Character and  Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:WaitForChild("HumanoidRootPart").CFrame then 
         Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
         end
-        wait(6.7)
+        wait(3.4)
    end
     ChatON = true
     
