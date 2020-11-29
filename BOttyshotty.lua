@@ -61,7 +61,7 @@ local ChatON = false
         if v and v.Character and  Player.Character:WaitForChild("HumanoidRootPart").CFrame and v.Character:WaitForChild("HumanoidRootPart").CFrame then 
         Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
         end
-        wait(1.4)
+        wait(3.4)
    end
     ChatON = true
     
