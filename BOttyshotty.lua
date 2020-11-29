@@ -30,7 +30,7 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
+         SendChatEvent.SayMessageRequest:FireServer("All hail Daddy Bl_xen and Papa UrMadSkets","All")
          wait(0.2)
         SendChatEvent.SayMessageRequest:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
 	wait(5)
