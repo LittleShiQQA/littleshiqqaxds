@@ -28,9 +28,9 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-           wait(3)
          SendChatEvent:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
         SendChatEvent:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
+	wait(3)
         end
         end)
     
