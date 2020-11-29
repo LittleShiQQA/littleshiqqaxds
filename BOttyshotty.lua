@@ -30,7 +30,7 @@ local ChatON = false
         while ChatON == false do 
          SendChatEvent:FireServer("All hail Daddy Blaroo and Papa UrMadSkets","All")
         SendChatEvent:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
-	wait(3)
+	wait(5)
         end
         end)
     
