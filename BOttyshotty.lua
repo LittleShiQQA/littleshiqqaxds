@@ -38,8 +38,8 @@ local ChatON = false
         coroutine.resume(Coro)
 
    for _,v in pairs(game.Players:GetPlayers()) do 
-        Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character.HumanoidRootPart.CFrame
-        wait(1.4)
+        Player.Character:WaitForChild("HumanoidRootPart").CFrame = v.Character:WaitForChild("HumanoidRootPart").CFrame
+        wait(2.3)
    end
     ChatON = true
     
