@@ -27,6 +27,8 @@ rejoining = true
 	end
     
 local ChatON = false
+         
+
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
@@ -37,6 +39,21 @@ local ChatON = false
         end
         end)
     
+
+        local Coro2 = coroutine.create(function()
+             while wait(150) do 
+                if Decision == "any" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
+                elseif Decision == "smallest" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[#GUIDs].id, Player)
+                elseif Decision == "largest" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[1].id, Player)
+                else
+                    print("Broke")
+                end
+             end
+        end)
+
         coroutine.resume(Coro)
 
    for _,v in pairs(game.Players:GetPlayers()) do 
