@@ -4,6 +4,7 @@ rejoining = true
 		syn.queue_on_teleport('game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()')
 	end
 	if syn.queue_on_teleport then
+	    wait(6)
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
     end
 
