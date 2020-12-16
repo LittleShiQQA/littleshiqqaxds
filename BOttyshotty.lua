@@ -32,9 +32,9 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("All hail Daddy Bl_xen and Papa UrMadSkets","All")
+         SendChatEvent.SayMessageRequest:FireServer("Ur all Vrtua's and Fraud's seedlings","All")
          wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("Girls Hit us up Blar 8041 Skxet 0001 (No x)","All")
+        SendChatEvent.SayMessageRequest:FireServer("GIRLS HIT US UP fraud 7777 || HMU Vrtual 8041","All")
 	wait(8)
         end
         end)
