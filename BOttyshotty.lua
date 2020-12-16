@@ -1,3 +1,4 @@
+if not game:IsLoaded() then game.Loaded:wait() end
 repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") and game.Players.LocalPlayer
 rejoining = true
 	if syn.queue_on_teleport then
@@ -6,10 +7,6 @@ rejoining = true
 	if syn.queue_on_teleport then
 	    wait(6)
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
-    end
-	if syn.queue_on_teleport then
-	    wait(4)
-        syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/antilag.lua"))()')
     end
     local Decision = "largest" 
     local Player = game.Players.LocalPlayer
@@ -76,7 +73,7 @@ local ChatON = false
 	elseif Decision == "largest" then
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[1].id, Player)
     else
-        print("Broke")
+
 	end
 	wait(3)
 	rejoining = false
