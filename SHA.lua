@@ -1,6 +1,6 @@
 --game.CoreGui.RobloxPromptGui.promptOverlay.ErrorPrompt.MessageArea.ErrorFrame.ErrorMessage.Text = "AYOOO :Flushed:"
 
-local Decision = "largest" 
+local Decision = "any" 
 local Player = game.Players.LocalPlayer
 local GUIDs = {}
 local maxPlayers = 0
