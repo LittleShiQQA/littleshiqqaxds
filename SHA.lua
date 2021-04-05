@@ -49,7 +49,7 @@ game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
 
 
 
-wait(500)
+wait(250)
      if Decision == "any" then
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
                 elseif Decision == "smallest" then
