@@ -3,7 +3,7 @@
 if not game:IsLoaded() then game.Loaded:wait() end
 repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") and game.Players.LocalPlayer
 
-local Decision = "any" 
+local Decision = "largest" 
 local Player = game.Players.LocalPlayer
 local GUIDs = {}
 local maxPlayers = 0
