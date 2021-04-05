@@ -48,3 +48,16 @@ game.CoreGui.RobloxPromptGui.promptOverlay.Changed:Connect(function()
                 end    
             end
     end)
+
+
+
+wait(220)
+     if Decision == "any" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id, Player)
+                elseif Decision == "smallest" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[#GUIDs].id, Player)
+                elseif Decision == "largest" then
+                    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[1].id, Player)
+                else
+                    print("Broke")
+                end    
