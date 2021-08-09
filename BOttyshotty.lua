@@ -34,7 +34,7 @@ local ChatON = false
         while ChatON == false do 
          SendChatEvent.SayMessageRequest:FireServer("Join or سيء gg/ecdPMwDpfh","All")
          wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("OWNER GOT EXPOSED JOIN gg/Re3wKYzkK8","All")
+        SendChatEvent.SayMessageRequest:FireServer("OWNER GOT EXPOSED JOIN gg/ecdPMwDpfh","All")
 	wait(0.2)
         end
         end)
