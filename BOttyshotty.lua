@@ -31,7 +31,7 @@ local ChatON = false
          
 local t = math.random(1,2)
 	if t == 1 then 
-	Message = "Skxet 2244 | No x | Capital S"
+	Message = "Skxcet 2244 | No xc | Capital S"
 	elseif t == 2 then 
 	Message = "please hmu Aiex 0999 capital i"		
 	end		
