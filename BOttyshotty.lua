@@ -32,9 +32,9 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("Join or سيء gg/ecdPMwDpfh","All")
+         SendChatEvent.SayMessageRequest:FireServer("Girls hmu AIex#0777","All")
          wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("OWNER GOT EXPOSED JOIN gg/ecdPMwDpfh","All")
+        SendChatEvent.SayMessageRequest:FireServer("ADD ME RN Sket#2244","All")
 	wait(0.2)
         end
         end)
