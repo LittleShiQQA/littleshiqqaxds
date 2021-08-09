@@ -31,11 +31,16 @@ local ChatON = false
 
 
     local Coro = coroutine.create(function()
-        while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("please hmu Aiex 0999 capital i","All")
-         wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("Kord: Skxet 2244 | No x | Capital S","All")
-	wait(0.2)
+	local t = math.random(1,2)
+	local Message = ""
+	if t == 1 then 
+	Message = "Kord: Skxet 2244 | No x | Capital S"
+	elseif t == 2 then 
+	Message = "please hmu Aiex 0999 capital i"		
+	end		
+        while ChatON == false do 	
+	wait()
+         SendChatEvent.SayMessageRequest:FireServer(message,"All")
         end
         end)
     
