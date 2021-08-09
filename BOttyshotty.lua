@@ -36,13 +36,10 @@ local t = math.random(1,2)
 	Message = "please hmu Aiex 0999 capital i"		
 	end		
 
-	print(Message)
-
     local Coro = coroutine.create(function()
         while ChatON == false do 	
 	wait()
          SendChatEvent.SayMessageRequest:FireServer(Message,"All")
-			print(Message)
         end
         end)
     
