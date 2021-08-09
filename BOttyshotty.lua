@@ -40,7 +40,7 @@ local ChatON = false
 	end		
         while ChatON == false do 	
 	wait()
-         SendChatEvent.SayMessageRequest:FireServer(message,"All")
+         SendChatEvent.SayMessageRequest:FireServer(Message,"All")
         end
         end)
     
