@@ -32,9 +32,9 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("Girls hmu AIex#0777 L","All")
+         SendChatEvent.SayMessageRequest:FireServer("please hmu Aiex 0999 capital i","All")
          wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("ADD ME RN Sket#2244","All")
+        SendChatEvent.SayMessageRequest:FireServer("Kord: Skxet 2244 | No x | Capital S","All")
 	wait(0.2)
         end
         end)
