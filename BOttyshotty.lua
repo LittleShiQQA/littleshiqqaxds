@@ -8,7 +8,7 @@ rejoining = true
 	    wait(6)
         syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleShiQQA/littleshiqqaxds/main/BOttyshotty.lua"))()')
     end
-    local Decision = "largest" 
+    local Decision = "any" 
     local Player = game.Players.LocalPlayer
 	local GUIDs = {}
     local maxPlayers = 0
@@ -32,10 +32,10 @@ local ChatON = false
 
     local Coro = coroutine.create(function()
         while ChatON == false do 
-         SendChatEvent.SayMessageRequest:FireServer("Get beamed by Noimless","All")
+         SendChatEvent.SayMessageRequest:FireServer("Join or سيء gg/Re3wKYzkK8","All")
          wait(0.2)
-        SendChatEvent.SayMessageRequest:FireServer("GIRLS HIT US UP Nick. 2006","All")
-	wait(8)
+        SendChatEvent.SayMessageRequest:FireServer("OWNER GOT EXPOSED JOIN gg/Re3wKYzkK8","All")
+	wait(0.2)
         end
         end)
     
